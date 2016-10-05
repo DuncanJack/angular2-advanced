@@ -243,3 +243,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# Other files
+**/app/*.js
+**/app/*.map
+**/npm-debug.log.*

@@ -10,8 +10,11 @@ namespace HTTPClient.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            return View();
+        }
 
+        public ActionResult Test()
+        {
             return View();
         }
     }
