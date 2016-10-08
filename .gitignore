@@ -245,6 +245,7 @@ ModelManifest.xml
 .fake/
 
 # Other files
-**/app/*.js
-**/app/*.map
+**/app/**/*.js
+**/app/**/*.map
 **/npm-debug.log.*
+
