@@ -12,11 +12,6 @@ export class HeroService {
     constructor(private http: Http) { }
 
     getHeroes(): Observable<Hero[]> {
-
-        this.http.get('/api/values').map(this.extractData).catch(this.handleError);
-
-        this.http.get('/api/heroes').map(this.extractData).catch(this.handleError);
-
         return this.http.get(this.heroesUrl)
             .map(this.extractData)
             .catch(this.handleError);
