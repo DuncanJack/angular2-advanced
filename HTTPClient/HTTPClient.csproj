@@ -168,7 +168,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.html" />
     <Content Include="app\toh\hero-list.component.html" />
+    <Content Include="app\wiki\wiki.component.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -230,6 +232,8 @@
     <TypeScriptCompile Include="app\toh\hero-list.component.ts" />
     <TypeScriptCompile Include="app\toh\hero.service.ts" />
     <TypeScriptCompile Include="app\toh\hero.ts" />
+    <TypeScriptCompile Include="app\wiki\wiki.component.ts" />
+    <TypeScriptCompile Include="app\wiki\wikipedia.service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

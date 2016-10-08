@@ -6,6 +6,7 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent }  from './app.component';
 
 import { HeroListComponent } from './toh/hero-list.component';
+import { WikiComponent } from './wiki/wiki.component';
 
 @NgModule({
     imports: [
@@ -16,10 +17,11 @@ import { HeroListComponent } from './toh/hero-list.component';
     ],
     declarations: [
         AppComponent,
-        HeroListComponent
+        HeroListComponent,
+        WikiComponent
     ],
     bootstrap: [
-        AppComponent]
-
+        AppComponent
+    ]
 })
 export class AppModule { }

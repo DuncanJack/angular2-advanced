@@ -4,6 +4,7 @@ import { Headers, RequestOptions } from '@angular/http';
 
 import { Hero } from './hero';
 import { Observable } from 'rxjs/Observable';
+import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 
 @Injectable()
 export class HeroService {
@@ -27,13 +28,13 @@ export class HeroService {
             .catch(this.handleError);
     }
 
-    private extractData(res: Response) {
+    private extractData(res: Response): any {
         let body = res.json();
         console.log('body', body);
         return body || { };
     }
 
-    private handleError(error: any) {
+    private handleError(error: any): ErrorObservable {
         let errorMsg = (error.message) ? error.message :
             error.status ? `${error.status} - ${error.statusText}` : 'server error';
         console.log(errorMsg);
